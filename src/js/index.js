@@ -1,4 +1,4 @@
-import "normalize.css";
+// import "normalize.css";
 import "../main.scss";
 import { generate_advice } from "./generate_advice";
 

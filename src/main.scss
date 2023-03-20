@@ -6,6 +6,7 @@ $dark-grayish-blue: hsl(217, 19%, 24%);
 $dark-blue: hsl(218, 23%, 16%);
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import "~normalize.css";
 
 body {
   min-height: 100vh;
