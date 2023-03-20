@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Advice Generator App | John Lois Floro</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <p class="card__id">
+          Advice #
+          <span id="advice__id"> <!-- Advice ID goes here --></span>
+        </p>
+        <div class="card__body">
+          <h1 class="card__body">
+            "<span id="advice__content">Lorem Ipsum</span>"
+          </h1>
+        </div>
+        <div class="card__divider">
+          <picture>
+            <source
+              media="(min-width: 480px)"
+              srcset="./images/pattern-divider-desktop.svg"
+            />
+            <img src="./images/pattern-divider-mobile.svg" alt="Divider" />
+          </picture>
+        </div>
+        <div class="card__btn" id="get_advice">
+          <img src="./images/icon-dice.svg" alt="Button" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

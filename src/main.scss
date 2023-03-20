@@ -1,0 +1,72 @@
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+body {
+  min-height: 100vh;
+  background: $dark-blue;
+  display: grid;
+  place-content: center;
+  font-family: Manrope, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 1.596rem + 0.6573vw, 2.1875rem);
+}
+
+.card {
+  background: $dark-grayish-blue;
+  width: clamp(21.875rem, 18.5739rem + 14.0845vw, 31.25rem);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+
+  &__id {
+    font-size: clamp(0.8rem, 0.7648rem + 0.1502vw, 0.9rem);
+    color: $neon-green;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    color: $light-cyan;
+    font-size: clamp(1.75rem, 1.706rem + 0.1878vw, 1.875rem);
+  }
+
+  &__divider {
+    margin-block: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 100vw;
+    padding: 1rem;
+    background: $neon-green;
+    margin-bottom: -4rem;
+    display: block;
+    margin-inline: auto;
+    transition: all 400ms ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within,
+    &:active {
+      cursor: pointer;
+      box-shadow: 0 0 50px $neon-green;
+    }
+  }
+}
