@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/loifloro/advice-generator-app)
-- Live Site URL: [Cloudfare](https://advice-generator-app-2el.pages.dev)
+- Live Site URL: [Netlify](https://advice-generator-loifloro.netlify.app/)
 
 ## My process
 
