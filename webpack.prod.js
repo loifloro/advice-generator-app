@@ -11,6 +11,7 @@ module.exports = merge(common, {
   output: {
     filename: "main.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   optimization: {
     minimizer: [
@@ -18,6 +19,8 @@ module.exports = merge(common, {
       new TerserPlugin(), // JS minifier
       new HtmlWebpackPlugin({
         template: "./src/index.html",
+        scriptLoading: "module",
+        inject: "body",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -39,9 +42,9 @@ module.exports = merge(common, {
       {
         test: /\.css$/,
         use: [
+          MiniCssExtractPlugin.loader, //3. Extract css into files
           "style-loader", //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs
-          // "sass-loader", //1. Turns sass into css
         ],
       },
       {

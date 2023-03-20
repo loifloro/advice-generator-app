@@ -42,5 +42,11 @@ module.exports = merge(common, {
       },
     ],
   },
-  plugins: [new BundleAnalyzerPlugin()],
+  plugins: [
+    new BundleAnalyzerPlugin(),
+    new HtmlWebpackPlugin({
+      scriptLoading: "module",
+      inject: "body",
+    }),
+  ],
 });
